@@ -33,7 +33,9 @@
         print "<th>Alto (px)</th>";
         print "<th>Tamaño (bytes)</th>";
         print "<th>Borrar</th>";
-        print "<th>Optimizar</th>";
+        print "<th>Optimizar (%)</th>";
+        print "<th>Optimizar x ancho</th>";
+        print "<th>Filtros</th>";
         print "</tr>";
         //termina encabezado
 
@@ -78,7 +80,15 @@
                 print "</td>";
 
                 print "<td>";
-                print "Optimizar";
+                print "<a href='optimizarFoto.php?foto=$foto'>Optimizar</a>";
+                print "</td>";
+
+                print "<td>";
+                print "<a href='optimizarAncho.php?foto=$foto'>Optimizar</a>";
+                print "</td>";
+
+                print "<td>";
+                print "<a href='filtrosImagen.php?foto=$foto'>Filtros</a>";
                 print "</td>";
             }
         }
